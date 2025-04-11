@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: black;
+  margin: 0;
+}
+.topBar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffc017;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 8%;
+  padding-right: 8%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  justify-content: space-between;
+  background-color: #ffc017;
+}
+
+header.scrolled {
+  animation: fadeToWhite 0.3s forwards;
+}
+
+@keyframes fadeToWhite {
+  from {
+    background-color: #ffc017;
+  }
+  to {
+    background-color: white;
+  }
+}
+
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+  padding: 0.8rem;
+}
+.start-button {
+  border: none;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+.start-button.scrolled {
+  animation: fadeToGreen 0.5s forwards;
+}
+
+@keyframes fadeToGreen {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: green;
+  }
+}
+
+nav {
+  margin-left: 8%;
+  margin-right: 8%;
+  position: relative;
+  overflow: hidden;
+}
+
+#m-image {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nav h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  font-family: "Spectral", serif;
+  letter-spacing: -6px;
+}
+.read-button {
+  border: none;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  padding: 0.5rem 2.2rem 0.5rem 2.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+nav span {
+  font-family: "Roboto", sans-serif;
+}
+h3 {
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+article {
+  margin-left: 8%;
+  margin-right: 8%;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+article > * {
+  flex: 1 1 calc(33.3% - 2rem);
+  max-width: calc(33.3% - 2rem);
+  box-sizing: border-box;
+}
+.card {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+.card-index {
+  font-size: 1.6rem;
+  color: #8080803d;
+  font-weight: bold;
+}
+.autor {
+  font-weight: 500;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+.text {
+  font-weight: 800;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.date {
+  color: grey;
+  font-size: 0.8rem;
+}
+.card img {
+  border-radius: 50%;
+  position: relative;
+  top: 2px;
+}
+.date img {
+  position: relative;
+  top: 5px;
+}
+#section-line {
+  background-color: #8080803d;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.section-container {
+  margin-left: 8%;
+  margin-right: 8%;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  gap: 2.3rem;
+  max-width: 100%;
+  align-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.autor-sec {
+  font-weight: 500;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+.text-sec {
+  font-weight: 800;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.text2 {
+  color: grey;
+  font-size: 0.9rem;
+}
+.date-sec {
+  color: grey;
+  font-size: 0.8rem;
+}
+.date-sec img {
+  position: relative;
+  top: 5px;
+}
+.date-sec span {
+  background-color: #80808018;
+  border-radius: 10px;
+  padding: 0.2rem;
+}
+.img-sec {
+  border-radius: 50%;
+  position: relative;
+  top: 2px;
+}
+.section-card {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+aside {
+  flex: 1.5;
+  margin-left: 3rem;
+}
+.displacer {
+  flex: 2.5;
+}
+aside button {
+  color: grey;
+  background-color: white;
+  border: 1px solid #8080803d;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+h2 {
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+aside p {
+  word-spacing: 10px;
+  color: grey;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
